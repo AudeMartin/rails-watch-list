@@ -1,6 +1,18 @@
-<h2>Bookmark new</h2>
+<div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(<%= asset_url("pexels-tima-miroshnichenko-7991579.png")%>) ">
+  <div class="container">
+    <%# <h1></h1> %>
+    <h1>Add a new movie to <%= @list.name%></h1>
+  </div>
+</div>
+
+<div class= "container">
 <%= simple_form_for [@list, @bookmark] do |f|%>
-  <%= f.input :comment %>
   <%= f.association :movie%>
-  <%= f.submit %>
+  <%= f.input :comment %>
+  <%= f.submit "Add to category"%>
+  <%# redirect_to list_path(@bookmark.list), status: :see_other %>
 <% end %>
+<button class="btn">
+  <%= link_to "Back to index", lists_path %>
+</button>
+</div>

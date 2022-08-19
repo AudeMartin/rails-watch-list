@@ -1,8 +1,25 @@
-<h1> List all</h1>
-<ul>
-  <% @lists.each do |list| %>
-    <li><%= link_to list.name, list_path(list)%></li>
-  <% end %>
-</ul>
+<div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(<%= asset_url("pexels-nathan-engel-436413.png")%>) ">
+  <div class="container">
+    <h1>Home, sweet home ... cinema !</h1>
+  </div>
+</div>
+<style>
+  ul {
+    list-style: none;
+  }
+</style>
 
-<%= link_to "Add a list", new_list_path(@list) %>
+<div class="container">
+  <div class="cards">
+    <% @lists.each do |list| %>
+      <div class="movie-category" class="d-flex justify-content-between">
+        <div>
+          <%= link_to list.name, list_path(list)%>
+        </div>
+      </div>
+    <% end %>
+  </div>
+  <button class="btn">
+    <%= link_to "Add a category", new_list_path(@list) %>
+  </button>
+</div>
