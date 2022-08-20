@@ -1,7 +1,7 @@
 // Specific CSS for your home-page
 .banner {
   background-size: cover;
-  background-position: top;
+  background-position: center;
   padding: 150px 0;
 }
 
@@ -14,7 +14,9 @@
 }
 
 .movie-category {
-  background-color:#747E61;
+  background-color: white;
+  // background-image: asset_url("gr-stocks-q8P8YoR6erg-unsplash.png");
+  // background-size: cover;
   height: 100px;
   width: 300px;
   box-shadow: 0 0 15px rgba(0,0,0,0.3);
@@ -38,13 +40,14 @@
 .movie {
   background-color:#986042;
   height: auto;
-  width: 300px;
-  box-shadow: 0 0 15px rgba(0,0,0,0.3);
+  width: 350px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.4);
   text-decoration: none;
   text-align: center;
   text-justify: auto;
   padding: 16px;
   margin: 16px;
+  border-radius: 4px;
 }
 .movie:hover {
   opacity: 0.8;

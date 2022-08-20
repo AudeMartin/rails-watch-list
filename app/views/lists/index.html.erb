@@ -13,7 +13,7 @@
   <div class="cards">
     <% @lists.each do |list| %>
       <div class="movie-category" class="d-flex justify-content-between">
-        <div>
+        <div class="background-image">
           <%= link_to list.name, list_path(list)%>
         </div>
       </div>

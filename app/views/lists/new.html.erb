@@ -1,5 +1,20 @@
-<h2>List new</h2>
+<div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(<%= asset_url("new-pexels-tima-miroshnichenko-7991579.png")%>) ">
+  <div class="container">
+    <%# <h1></h1> %>
+    <h1>Add a new category</h1>
+  </div>
+</div>
+
+
+<div class= "container">
 <%= simple_form_for [@list] do |f|%>
   <%= f.input :name %>
+  <%# <button class="btn"> %>
   <%= f.submit %>
+  <%# </button> %>
+  <button class="btn">
+  <%= link_to "Back to index", lists_path %>
+  </button>
 <% end %>
+
+</div>

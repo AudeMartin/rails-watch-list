@@ -1,4 +1,4 @@
-<div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(<%= asset_url("pexels-tima-miroshnichenko-7991579.png")%>) ">
+<div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(<%= asset_url("new-pexels-tima-miroshnichenko-7991579.png")%>) ">
   <div class="container">
     <%# <h1></h1> %>
     <h1><%= @list.name %></h1>
@@ -39,4 +39,7 @@
 <button class="btn">
   <%= link_to "Back to index", lists_path %>
 </button>
-<%# <%= link_to "delete", bookmark_path(bookmark), data: { turbo_method: :delete, turbo_confirm: "Are you sure you want to remove #{movie.title} from your #{@list.name} list"} %>
+
+<%# <button class="btn"> %>
+  <%# <%= link_to "Delete", list_path(@list), data: { turbo_method: :delete, turbo_confirm: "Are you sure ?"} %>
+<%# </button> %>
